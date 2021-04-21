@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 
+## Scrape for skills mentioned in company job descriptions!
+
 baseLink = 'https://jobs.apple.com'
 totalPage = 95
 

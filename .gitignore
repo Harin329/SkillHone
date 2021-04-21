@@ -1,8 +1,2 @@
 env
-*.pyc
-staticfiles
-*~
-*.swp
-*#
-*.sqlite3
-migrations
+.DS_Store
