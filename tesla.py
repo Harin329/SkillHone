@@ -1,7 +1,11 @@
-from bs4 import BeautifulSoup
-import requests
 import csv
 import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.select import Select
+from selenium.webdriver import ActionChains
 
 ## Scrape for skills mentioned in company job descriptions!
 
@@ -11,13 +15,6 @@ exclusion = ['Fall 2021 Interns_Venkat, Ganesh Engineering & Information Technol
 
 ## Init total counter
 dictionary = dict()
-
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.select import Select
-from selenium.webdriver import ActionChains
 
 driver = webdriver.Chrome(executable_path="./chromedriver")
 driver.get(baseLink)
