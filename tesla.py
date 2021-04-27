@@ -58,7 +58,7 @@ for row in rows[1:]:
 driver.close()
 
 ## Write to csv
-with open('Tesla.csv', 'w') as f:  
+with open('./results/Tesla.csv', 'w') as f:  
     writer = csv.writer(f)
     for k, v in dictionary.items():
        writer.writerow([k, v])

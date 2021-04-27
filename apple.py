@@ -46,7 +46,7 @@ for page in range(1, totalPage + 1):
                             dictionary[w] = 1
 
 ## Write to csv
-with open('Apple.csv', 'w') as f:  
+with open('./results/Apple.csv', 'w') as f:  
     writer = csv.writer(f)
     for k, v in dictionary.items():
        writer.writerow([k, v])
