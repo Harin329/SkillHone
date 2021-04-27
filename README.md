@@ -4,8 +4,9 @@
 
 Scrapes jobs from Apple and generates a keyword dictionary for the most mentioned skills/tools/traits.
 
-Apple - Simple HTML site scraped using BeautifulSoup
-Tesla - Dynamic JavaScript site scraped using Selenium
+Apple - Simple HTML site scraped using BeautifulSoup <br />
+Tesla - Dynamic JavaScript site scraped using Selenium <br />
+??? - Scrapy
 
 ## Tesla Inc. - April 26, 2021
 ![Tesla](./images/Tesla_04_26.png)
