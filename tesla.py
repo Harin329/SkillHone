@@ -9,7 +9,7 @@ from selenium.webdriver import ActionChains
 
 ## Scrape for skills mentioned in company job descriptions!
 
-baseLink = 'https://www.tesla.com/careers/search/?department=3'
+baseLink = 'https://www.tesla.com/careers/search/?department=4'
 totalPage = 29
 exclusion = ['Fall 2021 Interns_Venkat, Ganesh Engineering & Information Technology Palo Alto, California']
 
@@ -24,7 +24,7 @@ sel.select_by_index(0)
 time.sleep(0.8)
 
 for i in range(totalPage):
-    end=driver.find_element_by_class_name("tds-footer-meta")
+    end=driver.find_element_by_class_name("tds-site-footer")
     a = ActionChains(driver)
     a.move_to_element(end).perform()
 
